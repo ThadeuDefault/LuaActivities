@@ -1,16 +1,20 @@
+-- Faça um programa que lê do usuário um caractere e informa se ele é uma vogal, uma consoante
+-- ou não é uma letra.
 
- N1, N2, N3 = io.read('n*', '*n', '*n')
+caractere = io.read()
 
- if N1 > N2 then
-    if N1 > N3 then
-    
-    else
-    end
- else
-  if N2 > N3 then
-	MaiorPar = N2%2 == 0
-  else 
-     MaiorPar = N3%2 == 0
-  end
+if tonumber(caractere) ~= nill then
+   print("Não é uma letra")
+elseif caractere == "a" then
+   print("É uma vogal")
+elseif caractere == "e" then
+   print("É uma vogal")
+elseif caractere == "i" then
+   print("É uma vogal")
+elseif caractere == "o" then
+   print("É uma vogal")
+elseif caractere == "u" then
+   print("É uma vogal")
+else
+   print("É uma letra")
 end
-
