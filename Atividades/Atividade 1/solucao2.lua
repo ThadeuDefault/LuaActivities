@@ -16,5 +16,5 @@ elseif caractere == "o" then
 elseif caractere == "u" then
    print("É uma vogal")
 else
-   print("É uma letra")
+   print("É uma consoante")
 end

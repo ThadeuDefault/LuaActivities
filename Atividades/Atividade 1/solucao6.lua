@@ -11,43 +11,50 @@ cor3 = io.read()
 
 -- Contador para os valores iguais
 
-iguais = 0
+    azul = 0
+    vemelho = 0
+    preto = 0
+
+-- Levando em consideração que não podemos suportar duas cores iguais, vamos usar
+-- o elevado ao 0 para que o mesmo só permita o número 1 como contador de uma cor.
 
 -- Comparação para ver se a cor1 é igual a alguma das cores que nós queremos.
 
     if cor1 == "azul" then
-        iguais = iguais + 1
+        azul = azul^0
     elseif cor1 == "preto" then
-        iguais = iguais + 1
+        preto = preto^0
     elseif cor1 == "vermelho" then
-        iguais = iguais + 1
+        vemelho = vermelho^0
     end
 
 -- Comparação para ver se a cor2 é igual a alguma das cores que nós queremos.
 
-if cor2 == "azul" then
-    iguais = iguais + 1
-elseif cor2 == "preto" then
-    iguais = iguais + 1
-elseif cor2 == "vermelho" then
-    iguais = iguais + 1
-end
+    if cor2 == "azul" then
+        azul = azul^0
+    elseif cor2 == "preto" then
+        preto = preto^0
+    elseif cor2 == "vermelho" then
+        vermelho = vermelho^0
+    end
 
 -- Comparação para ver se a cor3 é igual a alguma das cores que nós queremos.
 
-if cor3 == "azul" then
-    iguais = iguais + 1
-elseif cor3 == "preto" then
-    iguais = iguais + 1
-elseif cor3 == "vermelho" then
-    iguais = iguais + 1
-end
+    if cor3 == "azul" then
+        azul = azul^0
+    elseif cor3 == "preto" then
+        preto = preto^0
+    elseif cor3 == "vermelho" then
+        vermelho = vermelho^0
+    end
 
 -- Saída para dar resposta VERDADEIRO ou FALSO a partir da condição de que duas cadeias sejam
--- iguais as requiridas.
+-- iguais as requisidtadas.
 
-    if iguais >= 2 then
+    if (azul+vermelho+preto) >= 2 then
         print("VERDADEIRO")
     else
         print("FALSO")
     end
+
+-- Ajuda de @adsonrs < Menino Bom!
