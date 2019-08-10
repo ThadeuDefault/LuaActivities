@@ -9,3 +9,4 @@ Solução de algumas atividades em lua com fins educacionais para iniciantes e d
 
 # Novas atividades e provas
   - Esperando as atividades e provas de 2019.2
+  - Esperando qualquer dúvida sobre.
